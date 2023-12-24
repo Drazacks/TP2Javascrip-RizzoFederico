@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <title>Venta de Pasteles</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
+    <header style="background-color: #faaca8;">
+        <nav>
+            <div class="logo">
+                <a href="#">Madame Pastel</a>
+            </div>
+            <div class="menu-toggle">
+                <input type="checkbox" id="menu-toggle-checkbox">
+                <label for="menu-toggle-checkbox" class="menu-icon">&#9776;</label>
+                <ul class="menu">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#pasteles">Pasteles</a></li>
+                    <li><a href="#precios">Precios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar">
+                <button type="submit" style="background-color: #ddd6f3;">Buscar</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <aside class="menu">
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="#pastel1">Pastel 1</a></li>
+                <li><a href="#pastel2">Pastel 2</a></li>
+                <!-- Agrega más pasteles aquí -->
+            </ul>
+        </aside>
+        <section class="muestrario">
+            <div class="card" id="pastel1">
+                <img src="https://via.placeholder.com/300" alt="Pastel 1">
+                <h3>Pastel 1</h3>
+                <p>Descripción del Pastel 1</p>
+                <p>Precio: $XX.XX</p>
+            </div>
+            <div class="card" id="pastel2">
+                <img src="https://via.placeholder.com/300" alt="Pastel 2">
+                <h3>Pastel 2</h3>
+                <p>Descripción del Pastel 2</p>
+                <p>Precio: $XX.XX</p>
+            </div>
+            <!-- Agrega más cards aquí -->
+        </section>
+    </main>
+
+    <footer style="background-color: #faaca8;">
+        <p style="color: white;">Pie de página - © 2023 Venta de Pasteles</p>
+    </footer>
 
     <script src="./main.js"></script>
 </body>
+
 </html>
