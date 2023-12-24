@@ -1,170 +1,74 @@
-/* Estilos generales */
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #ddd6f3;
+    color: #333;
 }
 
-/* Encabezado */
 header {
-    color: white;
-    padding: 15px 20px;
+    background-color: #faaca8;
+    padding: 20px;
+    text-align: center;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 24px;
-}
-
-.menu-toggle {
-    display: none;
-}
-
-.menu-icon {
-    cursor: pointer;
-    font-size: 24px;
-}
-
-.menu {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+h1 {
     margin: 0;
-    padding: 0;
-}
-
-.menu li {
-    display: inline;
-}
-
-.menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.menu a:hover {
-    background-color: #f7b5d1;
-    color: #fff;
 }
 
 .search-bar {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    padding: 8px;
+    width: 200px;
 }
 
-.search-bar input[type="text"] {
-    padding: 5px;
-    margin-right: 10px;
-}
-
-.search-bar button {
-    padding: 5px 10px;
-    background-color: #faaca8;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-/* Contenedor principal */
-.container {
+.grid-container {
     display: grid;
-    grid-template-columns: 30% 70%;
-    grid-gap: 20px;
-    padding: 20px;
-    background-color: #ddd6f3;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    margin: 20px;
 }
 
-/* Menú lateral */
-.menu {
+.sidebar {
     background-color: #faaca8;
-    flex-direction: column;
     padding: 20px;
-    border-radius: 10px;
 }
 
-.menu h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: white;
-}
-
-.menu ul {
-    list-style: none;
+ul {
+    list-style-type: none;
     padding: 0;
-    margin: 0;
 }
 
-.menu ul li {
+ul li {
     margin-bottom: 10px;
 }
 
-.menu ul li a {
+ul li a {
     text-decoration: none;
-    color: white;
+    color: #333;
 }
 
-.menu ul li a:hover {
-    background-color: #f7b5d1;
-    color: #fff;
-}
-
-/* Muestrario de pasteles */
-.muestrario {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     gap: 20px;
-    animation: fadeInUp 1s ease-in-out;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 .card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    text-align: center;
-    background-color: white;
+    background-color: #faaca8;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
 }
 
-.card img {
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-/* Pie de página */
 footer {
     text-align: center;
-    padding: 20px 0;
-    color: white;
+    padding: 20px;
+    background-color: #faaca8;
 }
